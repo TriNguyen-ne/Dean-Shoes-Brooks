@@ -35,7 +35,7 @@ npm.cmd run cms
 2. Mở `http://localhost:5173/admin/` — Decap CMS ghi vào `public/content/catalog.json`.
 3. Commit và push; GitHub Actions deploy lên Pages.
 
-Trên site đã publish, `/admin/` đăng nhập GitHub. Cần [OAuth app](https://decapcms.org/docs/github-backend/) trỏ về repo (hoặc chỉ dùng CMS trên máy local rồi push).
+Trên site đã publish, `/admin/` đăng nhập bằng GitHub; đây là quyền quản trị nội dung riêng, không dùng tài khoản `admin` trong LMS. Cần [OAuth app](https://decapcms.org/docs/github-backend/) trỏ về repo (hoặc chỉ dùng CMS trên máy local rồi push).
 
 ### Link video
 

@@ -1,0 +1,49 @@
+backend:
+  name: github
+  repo: TriNguyen-ne/Dean-Shoes-Brooks
+  branch: main
+local_backend: true
+locale: vi
+
+media_folder: public/docs
+public_folder: /docs
+
+collections:
+  - name: catalog
+    label: Thư viện
+    files:
+      - name: catalog
+        label: Danh mục và bài học
+        file: public/content/catalog.json
+        fields:
+          - label: Danh mục
+            name: categories
+            widget: list
+            summary: '{{name}}'
+            fields:
+              - { label: ID, name: id, widget: string, hint: 'vd: onboarding' }
+              - { label: Tên, name: name, widget: string }
+          - label: Bài học / tài liệu
+            name: resources
+            widget: list
+            summary: '{{title}}'
+            fields:
+              - { label: ID, name: id, widget: string, hint: 'vd: bai-1, không dấu, gạch ngang' }
+              - { label: Tiêu đề, name: title, widget: string }
+              - { label: Mô tả, name: description, widget: text }
+              - { label: ID danh mục, name: categoryId, widget: string, hint: 'Phải trùng ID ở Danh mục' }
+              - label: Loại
+                name: kind
+                widget: select
+                options:
+                  - { label: Video (nhúng YouTube hoặc Drive), value: VIDEO }
+                  - { label: Tài liệu (PDF / link), value: FILE }
+              - label: URL
+                name: url
+                widget: string
+                hint: 'YouTube, Google Drive, link PDF, hoặc /docs/ten-file.pdf'
+              - label: Ngày
+                name: createdAt
+                widget: datetime
+                date_format: YYYY-MM-DD
+                time_format: false

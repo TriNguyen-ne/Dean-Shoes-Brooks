@@ -1,0 +1,45 @@
+{
+  "categories": [
+    {
+      "id": "onboarding",
+      "name": "Onboarding"
+    },
+    {
+      "id": "quy-trinh",
+      "name": "Quy trình"
+    },
+    {
+      "id": "tai-lieu",
+      "name": "Tài liệu"
+    }
+  ],
+  "resources": [
+    {
+      "id": "gioi-thieu-video",
+      "title": "Video mẫu YouTube (nhúng trên LMS)",
+      "description": "Bài mẫu: video phát ngay trên trang này, không cần sang YouTube. Admin thay bằng link unlisted của đội bạn.",
+      "categoryId": "onboarding",
+      "kind": "VIDEO",
+      "url": "https://www.youtube.com/watch?v=WmHIk7QNjac&list=RDWmHIk7QNjac&start_radio=1",
+      "createdAt": "2026-10-13"
+    },
+    {
+      "id": "huong-dan-drive",
+      "title": "Video mẫu Google Drive",
+      "description": "Thay url bằng link Drive (Anyone with the link). LMS sẽ nhúng preview, không có quảng cáo YouTube.",
+      "categoryId": "quy-trinh",
+      "kind": "VIDEO",
+      "url": "https://drive.google.com/file/d/THAY_ID_DRIVE_CUA_BAN/view",
+      "createdAt": "2026-10-13"
+    },
+    {
+      "id": "pdf-mau",
+      "title": "Tài liệu PDF mẫu",
+      "description": "File mở bằng link. Có thể dán link Drive (PDF) hoặc để file nhỏ trong public/docs rồi dùng đường dẫn /docs/ten-file.pdf.",
+      "categoryId": "tai-lieu",
+      "kind": "FILE",
+      "url": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+      "createdAt": "2026-10-13"
+    }
+  ]
+}

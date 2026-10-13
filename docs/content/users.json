@@ -1,0 +1,14 @@
+{
+  "users": [
+    {
+      "username": "FVLR-BR",
+      "passwordSha256": "3453bd956b8f874d5bcf5be791922633d34e5d6f551eb1d775e7947667d0f7e3",
+      "role": "member"
+    },
+    {
+      "username": "admin",
+      "passwordSha256": "04136613630d155398f240b109eebbbaff4117320cd71860583ab9f379dd6469",
+      "role": "admin"
+    }
+  ]
+}

@@ -47,10 +47,15 @@ Trường `kind`: `VIDEO` để nhúng; `FILE` để nút mở tài liệu (PDF 
 
 ## Đưa lên GitHub Pages (xem từ máy khác)
 
-1. Tạo repo tên **`Dean-Shoes-Brooks`** (khớp `base` `/Dean-Shoes-Brooks/` trong bản build Pages). Nếu đặt tên khác, sửa `vite.config.ts`.
-2. Push nhánh `main`.
-3. Repo → **Settings → Pages → Source: GitHub Actions**.
-4. Site: `https://<user>.github.io/Dean-Shoes-Brooks/`
+1. Repo → **Settings → Pages → Source: Deploy from a branch**.
+2. Chọn nhánh **`main`**, thư mục **`/docs`**, rồi nhấn **Save**.
+3. Trước mỗi lần push thay đổi ứng dụng hoặc nội dung, tạo bản build Pages:
+
+```powershell
+npm.cmd run build:pages
+```
+
+4. Commit và push các thay đổi, bao gồm thư mục `docs` vừa được tạo/cập nhật. Site: `https://<user>.github.io/Dean-Shoes-Brooks/`.
 
 Repo **public**: file JSON (kể cả hash mật khẩu) sẽ công khai. Đây là cổng đăng nhập trên trình duyệt, không phải cơ chế bảo vệ nội dung riêng tư.
 

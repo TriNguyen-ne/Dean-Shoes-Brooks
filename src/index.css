@@ -1,0 +1,31 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: 'Be Vietnam Pro', system-ui, sans-serif;
+  --color-ink: #1c1917;
+  --color-muted: #57534e;
+  --color-paper: #f6f1e8;
+  --color-card: #fffcf7;
+  --color-line: #e7e0d4;
+  --color-accent: #0f766e;
+  --color-accent-dark: #115e59;
+  --color-youtube: #b91c1c;
+  --color-drive: #1d4ed8;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+}
+
+#root {
+  width: 100%;
+}

@@ -36,8 +36,20 @@ export function LoginPage() {
   }
 
   return (
-    <div className="flex min-h-svh items-center justify-center px-4">
-      <div className="w-full max-w-md rounded-3xl border border-line bg-card p-8 shadow-sm">
+    <div
+      className="flex min-h-svh items-center justify-center bg-cover bg-center px-4 py-8"
+      style={{
+        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("${import.meta.env.BASE_URL}images/login-image.jpg")`,
+      }}
+    >
+      <div className="w-full max-w-md rounded-3xl border border-line bg-card/95 p-8 shadow-xl backdrop-blur-sm">
+        <div className="mb-6 flex justify-center">
+          <img
+            src={`${import.meta.env.BASE_URL}images/logo.png`}
+            alt="Dean Shoes"
+            className="h-auto w-32 drop-shadow-lg"
+          />
+        </div>
         <h1 className="m-0 text-2xl font-semibold tracking-tight">Đăng nhập</h1>
         <p className="mt-2 mb-6 text-sm text-muted">
           LMS nội bộ — cần tài khoản member để xem tài liệu.

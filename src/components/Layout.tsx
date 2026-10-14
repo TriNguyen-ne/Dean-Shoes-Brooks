@@ -10,10 +10,12 @@ export function Layout() {
     <div className="min-h-svh">
       <header className="border-b border-line bg-card/80 backdrop-blur">
         <div className="mx-auto flex max-w-5xl items-center justify-between gap-4 px-4 py-4">
-          <Link to="/" className="flex items-baseline gap-2 no-underline">
-            <span className="text-lg font-semibold tracking-tight text-ink">
-              LMS nội bộ
-            </span>
+          <Link to="/" className="flex items-center gap-3 no-underline">
+            <img
+              src={`${import.meta.env.BASE_URL}images/logo.png`}
+              alt="Dean Shoes"
+              className="h-12 w-auto"
+            />
             <span className="hidden text-sm text-muted sm:inline">
               Tài liệu & video hướng dẫn
             </span>
